@@ -1,7 +1,7 @@
 # Model-Parallelism-Workshop
 Code and notes associated with the model parallelism workshop. The workshop was delivered by Nvidia. 
 # Slides 
-You can access the workshop slides via this [link](https://drive.google.com/drive/folders/1ngVnPV90p7OMoZ6dQLysZwcu45vs-CNb?usp=drive_link)
+You can access the workshop slides via this [link](https://drive.google.com/drive/folders/1ngVnPV90p7OMoZ6dQLysZwcu45vs-CNb?usp=drive_link). Slides 1 and 2 correspond to Lab 1 and Slides 3 correspond to Lab 2.
 # Lab 1 
 Lab 1 covers the material needed to scale the training of large neural models to multiple gpus. Slides 1 & 2 cover the needed material for the lab. 
 
@@ -19,9 +19,14 @@ Lab 1 covers the material needed to scale the training of large neural models to
 ## External Resources 
 
 # Lab 2 
-insert here lab 2 summary and important things to remember. Include a brief description for each notebook. 
-# Papers and their summaries 
-include links for each paper discussed along with a summary. maybe include the summary in an excel sheet.
+Lab 2 covers the material needed to deploy a GPT model into production using the nvidia's Faster Transformer library and the nvidia's triton server
+
+## Notebooks summary
+
+1. In notebook 02, we deployed a 6B GPT-J model using nothing but pytorch and the transformers library. We used the deployed instance to perform few shots learning on the task of machine translation. Finally, we measured the inference time to use as a baseline for the next two notebooks.
+2. In notebook 03, we deployed the same model using the nvidia’s Faster Transformer Library. We ran the inference on one GPU and then we extended it to two GPUS using tensor parallelism.
+3. In notebook 04, we deployed the model into production using nvidia’s triton server
+
 # Conclusion and possible applicatiosn 
 
 conclude the workshop and put a list of applications. Where Can you apply the knowledge that you learned??
